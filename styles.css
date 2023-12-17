@@ -33,13 +33,16 @@ body {
 }
 
 .color9 {
-	margin-left: 15px;
-	width: 70px;
-	height: 30px;
-	transition: all 0.3s ease;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	padding: 5px;
+	font-weight: bolder;
 	cursor: pointer;
-	margin-top: 8px;
-	border: thin solid transparent;
+	transition: all 0.3s ease;
+	border: thick solid transparent;
+	background: white;
+	margin-left: -10px;
 }
 
 .color {
@@ -85,13 +88,17 @@ body {
 #cleanButton,
 #eraserButton {
 	text-align: center;
-	width: 120px;
+	width: 100px;
 	height: 20px;
 	padding: 5px;
 	font-weight: bolder;
 	cursor: pointer;
 	transition: all 0.3s ease;
 	border: thick solid transparent;
+}
+
+#eraserButton {
+	margin-left: -10px;
 }
 
 .color9:hover,

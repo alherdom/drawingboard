@@ -18,6 +18,7 @@ function paint(event) {
   }
 }
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const cellNumber = 90;
   const board = document.getElementById("drawingArea");

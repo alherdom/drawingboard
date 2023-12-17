@@ -1,4 +1,5 @@
 # Drawing Board
-Repository dedicated to drawing board created using javascript.
+Repository dedicated to d
+Drawing Board created using javascript.
 
 ![Drawing Board Image](./drawing.png)

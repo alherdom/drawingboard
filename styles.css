@@ -32,6 +32,16 @@ body {
 	border: thin solid #ddd;
 }
 
+.color9 {
+	margin-left: 15px;
+	width: 70px;
+	height: 30px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	margin-top: 8px;
+	border: thin solid transparent;
+}
+
 .color {
 	width: 50px;
 	height: 50px;
@@ -72,7 +82,22 @@ body {
 	background-color: white;
 }
 
-.color:hover {
+#cleanButton,
+#eraserButton {
+	text-align: center;
+	width: 120px;
+	height: 20px;
+	padding: 5px;
+	font-weight: bolder;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border: thick solid transparent;
+}
+
+.color9:hover,
+.color:hover,
+#cleanButton:hover,
+#eraserButton:hover {
 	transform: scale(1.1);
 	border: thick solid #939;
 }
@@ -91,23 +116,6 @@ body {
 	border: thick solid #939 !important;
 }
 
-#cleanButton,
-#eraserButton {
-	text-align: center;
-	width: 120px;
-	height: 20px;
-	padding: 5px;
-	font-weight: bolder;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	border: thick solid transparent;
-}
-
-#cleanButton:hover,
-#eraserButton:hover {
-	transform: scale(1.1);
-	border: thick solid #939;
-}
 
 @media screen and (max-width: 600px) {
 	.hidden-cell {

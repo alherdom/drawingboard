@@ -20,6 +20,12 @@ function paint(event) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  let inputColor = document.querySelector(".color9");
+  inputColor.addEventListener("change", function () {
+    selectedColor = this.value;
+    resetColorSelection();
+    this.classList.add("selected");
+  });
   const cellNumber = 90;
   const board = document.getElementById("drawingArea");
   const boardTable = document.createElement("table");
@@ -47,13 +53,13 @@ function selectColorHandler(selectedIndex) {
   };
 }
 
-for (let i = 1; i <= 8; i++) {
+for (let i = 1; i <= 9; i++) {
   const colorElement = document.querySelector(`.color${i}`);
   colorElement.addEventListener("click", selectColorHandler(i));
 }
 
 function resetColorSelection() {
-  for (let i = 1; i <= 8; i++) {
+  for (let i = 1; i <= 9; i++) {
     const colorElement = document.querySelector(`.color${i}`);
     colorElement.classList.remove("selected");
   }
